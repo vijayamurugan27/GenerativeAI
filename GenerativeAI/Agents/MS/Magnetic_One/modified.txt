@@ -1,0 +1,65 @@
+this thing shopuld work but i have mode changes in the file 
+
+E:\Materials\LLMs\Agents\MS\Magnetic_One\autogen\python\packages\autogen-magentic-one\examples> of utils.py 
+
+in that file i have changes line no 32:
+
+# model: str = "llama3.2-vision"
+    model: str = "llava-phi3"
+
+    
+normally it should work, but here it is not working., we have to check on that.
+
+
+and the you tube video for that link is here:
+
+https://www.youtube.com/watch?v=-WqHY3uE_K0
+
+and the git hub link for that page is also here.:
+
+https://github.com/vijayamurugan27/autogen-llama3.2
+
+and the original contributor file is here: 
+
+https://github.com/OminousIndustries/autogen-llama3.2
+
+and the example files where we run our sample file to be executed are in this location:
+
+https://github.com/microsoft/autogen/tree/main/python/packages/autogen-magentic-one/examples
+
+or here :
+
+https://github.com/vijayamurugan27/autogen-llama3.2/tree/main/python/packages/autogen-magentic-one/examples
+
+
+
+and the utils.py python is where the changes are being made and the path to that is here:
+
+https://github.com/vijayamurugan27/autogen-llama3.2/blob/main/python/packages/autogen-magentic-one/src/autogen_magentic_one/utils.py
+
+
+and another file location is multimodal_web_surfer.py
+
+https://github.com/microsoft/autogen/blob/main/python/packages/autogen-magentic-one/src/autogen_magentic_one/agents/multimodal_web_surfer/multimodal_web_surfer.py
+
+or in my github repo:
+
+https://github.com/vijayamurugan27/autogen-llama3.2/blob/main/python/packages/autogen-magentic-one/src/autogen_magentic_one/agents/multimodal_web_surfer/multimodal_web_surfer.py
+
+
+in the file multimodal_web_surfer.py and in the line :559 there is some changes:
+
+he is having problems in the line function (Line number 290)
+
+async def _execute_tool(
+
+
+
+and the discussion for it is here in this thread in microsft/magenticone github thread:
+
+https://github.com/microsoft/autogen/issues/4135
+
+
+
+
+

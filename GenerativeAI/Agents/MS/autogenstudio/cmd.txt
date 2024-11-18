@@ -1,0 +1,7 @@
+conda activate -n autogenstudio python=3.11.10
+
+conda activate autogenstudio
+
+pip install autogenstudio
+
+autogenstudio ui --port 8040

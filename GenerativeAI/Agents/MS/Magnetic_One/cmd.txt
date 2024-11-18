@@ -1,0 +1,43 @@
+1) git clone https://github.com/microsoft/autogen.git
+
+git clone https://github.com/micrfosoft/autogen.git
+
+2) cd autogen/python
+
+
+for installing UV, give this command in powershell. 
+
+3)	powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
+
+or using the virtual environment using the pypi.
+
+    3-b) pip install uv
+
+Adding path to the environment variables.
+
+download the docker and install in your system, this is used by the system.
+
+Downloading uv 0.5.1 (x86_64-pc-windows-msvc)
+4) Installing to C:\Users\Lenovo\.local\bin
+  uv.exe
+  uvx.exe
+everything's installed!
+
+To add C:\Users\Lenovo\.local\bin to your PATH, either restart your system or run:
+
+    set Path=C:\Users\Lenovo\.local\bin;%Path%   (cmd)
+    $env:Path = "C:\Users\Lenovo\.local\bin;$env:Path"   (powershell)
+
+
+and then give the command in the terminal:
+
+5)	uv sync --all-extras
+
+6) .venv/bin/activate
+
+
+7) cd packages\autogen-magentic-one
+
+8) pip install -e .
+
+cd 

@@ -1,0 +1,60 @@
+we can beat a better LLM models using a small LLM models using Agents.
+
+
+1)Building blocks of agents.
+
+2)Installation of Agents.
+
+3) Real world use case of agents.
+
+What are agents?
+in autogen , An agent is having skills.
+
+1) Skills.
+
+        Skills are nothing but functions , serves for a specific purpose. it has an inputs and output
+
+        Inputs --> Skills --> Outputs     |     Python Functions , serves a specific purpose.
+                                        |  
+        Example
+
+        Prompt --> Skills --> Image saved Locally
+
+2) Models.
+
+        Open source Models or Closed Source Models.
+
+3) Agents.
+
+it contains both Skills and Models. it takes Inputs from the user or Other agents, and using the Skills and models 
+talk to eaxh other and gives an Output requested by the user or the agent.
+
+            Input
+
+        Skills  <-->    Models          Agents
+            
+            Output
+
+4) Work Flows
+How are these work flows being structured. That means how are these agents are going to talk to eachother, 
+in order  to give us the required outputs. IT is also called as Conversational Patterns and behaviours.
+
+Converstational Behaviour / Patterns
+
+    1) Two - Agent Chats. -> Two agents talking to each other.
+    2) Sequential Chats. -> Multiple sequence of two agents talking to each other. 
+                            And the conversations are talking to each other.and then during the Chats
+                            all the conversations are being fed to the each other , we call it as memory.
+                            This pattern is useful for Complex task that can be broken down into independent sub-tasks.
+
+    3) Group Chat. -> Group chat Manager or --> Agent A
+                        Orchestrator            Agent B
+                                                Agent C
+                                                Agent D   
+
+                    The group chat Manager is going to tell or choose the Agents, who is going to chat or going to do the task.
+
+    4) Nested Chat. -> it is a combination of all these patterns.
+
+
+

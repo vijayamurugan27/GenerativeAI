@@ -1,0 +1,50 @@
+from autogen import AssistantAgent, UserProxyAgent
+
+
+# Define configurations for both agents
+assistant_model_name = "llama3.2:1b"  # Model for the AssistantAgent
+user_proxy_model_name = "smollm:360m"  # Model for the UserProxyAgent
+
+
+# Configuration for the AssistantAgent
+assistant_config = [{
+    "model": assistant_model_name,
+    "base_url": "http://localhost:11434/v1",
+    "api_key": "ollama"
+    
+}]
+
+
+# Configuration for the UserProxyAgent
+user_proxy_config = [{
+    "model": user_proxy_model_name,
+    "base_url": "http://localhost:11434/v1",
+    "api_key": "ollama"
+}]
+
+
+# Initialize the AssistantAgent with its configuration and parameters
+assistant = AssistantAgent(
+    name="assistant",
+    llm_config={
+        "seed": 42,  # For reproducibility
+        "config_list": assistant_config,
+        "temperature": 0,  # Control randomness (0 means deterministic responses)
+    },
+)
+
+
+# Initialize the UserProxyAgent with its configuration
+user_proxy = UserProxyAgent(
+    name = "user_proxy", 
+    human_input_mode="NEVER",
+    max_consecutive_auto_reply=10,
+    is_termination_msg= lambda x: x.get("content", "").rstrip().endswith("TERMINATE"),
+    code_execution_config={"work_dir": "coding", "use_docker": False}),
+
+
+# Start the chat with the assistant
+user_proxy.initiate_chat(
+    assistant, 
+    message="find todays stock price of maruthi and tata motors in india?"
+    )

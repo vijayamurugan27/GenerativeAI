@@ -1,0 +1,6 @@
+planner: this will create step by step plan for the inputs.
+programmer: this will create teh code.
+optimiser: this will look at the code and make the code more efficient.
+Manager: 
+
+so these are the three different agents for our daily day to day usage.
