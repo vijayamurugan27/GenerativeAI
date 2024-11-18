@@ -1,0 +1,3 @@
+data load tool(dlt) - the open-source Python library for data loading.
+
+we can use it in Google colab , AWS lambda function, an airflow DAG, your local laptop. or a GPT-4 assisted development plyground - dlt can be dropped anywhere.
